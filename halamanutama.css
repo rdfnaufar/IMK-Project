@@ -1,5 +1,5 @@
 :root {
-  --primary: #yourPrimaryColor; /* Replace with your primary color */
+  --primary: #53A93E; 
   --bg: #F5EEC8;
 }
 
@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffff;
+  margin-top: 60px; /* Adjusted to account for the fixed navbar */
 }
 
 /* Navbar */
@@ -121,8 +122,17 @@ body {
   .box {
     margin-left: 0; /* Reset margin for the search box on smaller screens */
   }
+
+  .profil {
+    order: -1; /* Move the profile icon to the beginning on smaller screens */
+  }
+  
+  .slogan .content .gambarberanda {
+    width: 100%; /* Make the image fill the width on smaller screens */
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
 }
-/* Add this to your existing CSS */
+
 
 .profil {
   position: relative;
@@ -152,4 +162,11 @@ body {
 
 .sub-navbar a:hover {
   background-color: #0F993E;
+}
+
+/* Navbar */
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

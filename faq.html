@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>Halaman Utama</title>
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet" />
+ <!-- Feather icon -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="halamanutama.css" />
+</head>
+
+<body>
+ <!-- Navbar start -->
+ <nav class="navbar">
+    <a href="#" class="navbar-logo">saling<span>peduli</span></a>
+    <ul>
+      <li><a href="beranda">Beranda</a></li>
+      <li>
+        <a href="programsumbangan">Program Sumbangan</a>
+        <ul>
+          <li><a href="#">Organisasi Amal</a></li>
+          <li><a href="#">Sumbangan Makanan</a></li>
+          <li><a href="#">Proses Penilaian Makanan</a></li>
+          <li><a href="#">Jadwal Pengambilan</a></li>
+        </ul>
+      </li>
+      <li><a href="sumberdaya">Sumber Daya</a>
+        <ul>
+          <li><a href="#">Panduan Penyimpanan Makanan</a></li>
+          <li><a href="#">Panduan Keamanan Pangan</a></li>
+        </ul>
+      </li>
+      <li><a href="berita">Berita dan Artikel</a></li>
+      <li><a href="faq">FAQ</a></li>
+    </ul>
+
+    <div class="box">
+      <input type="text" placeholder="Search...">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+    </div>
+
+    <div class="profil">
+      <a href="#" id="profil"><i data-feather="user"></i></a>
+      <div class="sub-navbar">
+        <a href="#">Masuk</a>
+        <a href="#">Daftar</a>
+      </div>
+    </div>
+ </nav>
+ <!-- Navbar end -->
+
+ <!-- FAQ content start -->
+ <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="container">
+      <div class="item">
+        <h3>Apa itu Saling Peduli?</h3>
+        <p>Saling Peduli adalah platform yang menghubungkan penyumbang makanan dengan penerima makanan. Platform ini mempermudah pengumpulan dan pendistribusian makanan yang diinginkan oleh masyarakat.</p>
+      </div>
+      <div class="item">
+        <h3>Bagaimana cara untuk menjadi penghuni sumbangan?</h3>
+        <p>Untuk menjadi penghuni sumbangan, Anda harus mendaftarkan diri Anda pada platform kami dan mengisi formulir yang telah disediakan. Kemudian, tim kami akan melakukan verifikasi data Anda.</p>
+      </div>
+      <div class="item">
+        <h3>Apakah ada biaya untuk menjadi penghuni sumbangan?</h3>
+        <p>Tidak, platform kami 100% gratis untuk penyumbang dan penerima makanan. Semua biaya yang terlibat dalam proses ini akan dibebankan pada pengirim makanan.</p>
+      </div>
+      <div class="item">
+        <h3>Bagaimana cara untuk menjadi penyumbang makanan?</h3>
+        <p>Untuk menjadi penyumbang makanan, Anda harus mendaftarkan diri Anda pada platform kami dan mengisi formulir yang telah disediakan. Kemudian, tim kami akan melakukan verifikasi data Anda.</p>
+      </div>
+      <div class="item">
+        <h3>Apa saja standar yang perlu dipenuhi oleh penghuni sumbangan dan penyumbang makanan?</h3>
+        <p>Penghuni sumbangan dan penyumbang makanan harus memiliki akun di platform kami yang terverifikasi dan melakukan verifikasi pada nomor telepon yang terdaftar pada akun mereka. Selain itu, mereka harus mengisi formulir yang telah disediakan dengan data yang lengkap dan benar.</p>
+      </div>
+    </div>
+ </div>
+ <!-- FAQ content end -->
+
+ <!-- Footer start -->
+ <footer>
+    <p>&copy; 2022 Saling Peduli. All Rights Reserved</p>
+ </footer>
+ <!-- Footer end -->
+
+ <script>
+ feather.replace();
+
+ // Dropdown navbar
+ document.querySelector(".navbar ul li a:nth-child(2)").addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("show");
+ });
+
+ // Toggle search
+ document.querySelector("#search").addEventListener("click", function () {
+    document.querySelector(".box").classList.toggle("show");
+ });
+
+ // Toggle profil
+ document.querySelector("#profil").addEventListener("click", function () {
+    document.querySelector(".sub-navbar").classList.toggle("show");
+ });
+ </script>
+</body>
+</html>
