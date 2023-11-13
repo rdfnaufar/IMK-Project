@@ -122,3 +122,34 @@ body {
     margin-left: 0; /* Reset margin for the search box on smaller screens */
   }
 }
+/* Add this to your existing CSS */
+
+.profil {
+  position: relative;
+}
+
+.sub-navbar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #53A93E;
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profil:hover .sub-navbar {
+  display: flex;
+}
+
+.sub-navbar a {
+  padding: 10px;
+  color: #F5EEC8;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sub-navbar a:hover {
+  background-color: #0F993E;
+}
