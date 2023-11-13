@@ -47,7 +47,7 @@ body {
 .navbar ul {
   display: flex;
   list-style: none;
-  margin-left: auto; /* Align the navbar items to the right */
+  margin-left: auto; 
 }
 
 .navbar ul li {
