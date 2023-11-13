@@ -1,0 +1,118 @@
+:root {
+  --primary: ;
+  --bg: #F5EEC8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #ffff;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  border-bottom: 1px solid #0F993E;
+  position: fixed;
+  background-color: #53A93E;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: #F5EEC8;
+  text-decoration: none;
+}
+
+.navbar ul li {
+  position: relative;
+  float: left;
+  display: block;
+}
+
+.navbar ul li a {
+  display: block;
+  font-size: 10px;
+  padding: 20px;
+
+}
+
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  display: none;
+  background-color: #53A93E;
+}
+
+.navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid #0F993E;
+}
+
+.navbar ul li:hover > ul {
+  display: block;
+}
+
+.box {
+  height: 45px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.box a {
+  color: #333;
+}
+
+/*
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.box input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.box a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}*/
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 7000;
+  color: #FBFBFB;
+}
+
+.navbar .navbar-logo span {
+  color:#F5EEC8;
+} 
+
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+} */
