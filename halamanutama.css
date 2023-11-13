@@ -1,5 +1,5 @@
 :root {
-  --primary: #53A93E;
+  --primary: #yourPrimaryColor; /* Replace with your primary color */
   --bg: #F5EEC8;
 }
 
@@ -11,17 +11,21 @@
   border: none;
   text-decoration: none;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffff;
 }
+
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.4rem 7%;
   border-bottom: 1px solid #0F993E;
+  position: fixed;
   background-color: #53A93E;
   top: 0;
   left: 0;
@@ -29,9 +33,20 @@ body {
   z-index: 9999;
 }
 
-.navbar a {
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FBFBFB;
+}
+
+.navbar-logo span {
   color: #F5EEC8;
-  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Align the navbar items to the right */
 }
 
 .navbar ul li {
@@ -40,15 +55,15 @@ body {
   display: block;
 }
 
+.navbar a {
+  color: #F5EEC8;
+  text-decoration: none;
+}
+
 .navbar ul li a {
   display: block;
-  font-size: 16px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 0;
-  align-self: flex-end;
-
+  font-size: 14px;
+  padding: 10px;
 }
 
 .navbar ul li ul {
@@ -62,7 +77,6 @@ body {
 .navbar ul li ul li {
   width: 100%;
   border-top: 1px solid #0F993E;
-  align-self: center;
 }
 
 .navbar ul li:hover > ul {
@@ -76,32 +90,35 @@ body {
   padding: 10px;
   background: #fff;
   border-radius: 30px;
+  margin-left: auto; /* Align the search box to the right */
 }
 
 .box a {
   color: #333;
 }
 
-.navbar .navbar-logo {
-  font-size: 2rem;
-  font-weight: 7000;
-  color: #FBFBFB;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.4rem 5%;
+  }
 
-.navbar .navbar-logo span {
-  color:#F5EEC8;
-}
-/* Navbar */
-.slogan{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
-.slogan .content .gambarberanda {
-  width: 500px;
-  height: auto;
-  margin-left: 260px;
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-end; /* Align the navbar items to the right */
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    padding: 10px 0;
+  }
+
+  .box {
+    margin-left: 0; /* Reset margin for the search box on smaller screens */
+  }
 }
