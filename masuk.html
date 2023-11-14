@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Halaman Utama</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet" />
+  <!-- Feather icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="halamanutama.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .sign-in-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sign-in-container h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">saling<span>peduli</span></a>
+    <ul>
+      <li><a href="beranda">Beranda</a></li>
+      <li>
+        <a href="programsumbangan">Program Sumbangan</a>
+        <ul>
+          <li><a href="#">Organisasi Amal</a></li>
+          <li><a href="#">Sumbangan Makanan</a></li>
+          <li><a href="#">Proses Penilaian Makanan</a></li>
+          <li><a href="#">Jadwal Pengambilan</a></li>
+        </ul>
+      </li>
+      <li><a href="sumberdaya">Sumber Daya</a>
+        <ul>
+          <li><a href="#">Panduan Penyimpanan Makanan</a></li>
+          <li><a href="#">Panduan Keamanan Pangan</a></li>
+        </ul>
+      </li>
+      <li><a href="berita">Berita dan Artikel</a></li>
+      <li><a href="faq">FAQ</a></li>
+    </ul>
+
+    <div class="box">
+      <input type="text" placeholder="Search...">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+    </div>
+
+    <div class="profil">
+      <a href="#" id="profil"><i data-feather="user"></i></a>
+      <div class="sub-navbar">
+        <a href="#">Masuk</a>
+        <a href="#">Daftar</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Isi -->
+  <div class="sign-in-container">
+    <h2>Sign In</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Sign In</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Feather icon -->
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
