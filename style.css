@@ -1,0 +1,237 @@
+:root {
+    --primary: #53A93E; 
+    --bg: #F5EEC8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #ffff;
+    margin-top: 60px; /* Adjusted to account for the fixed navbar */
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    border-bottom: 1px solid #0F993E;
+    position: fixed;
+    background-color: #53A93E;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FBFBFB;
+  }
+  
+  .navbar-logo span {
+    color: #F5EEC8;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto; 
+  }
+  
+  .navbar ul li {
+    position: relative;
+    float: left;
+    display: block;
+  }
+  
+  .navbar a {
+    color: #F5EEC8;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+    background-color: #53A93E;
+  }
+  
+  .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #0F993E;
+  }
+  
+  .navbar ul li:hover > ul {
+    display: block;
+  }
+  
+  .box {
+    height: 45px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    border-radius: 30px;
+    margin-left: auto; /* Align the search box to the right */
+  }
+  
+  .box a {
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.4rem 5%;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-end; /* Align the navbar items to the right */
+    }
+  
+    .navbar ul li {
+      width: 100%;
+    }
+  
+    .navbar ul li a {
+      padding: 10px 0;
+    }
+  
+    .box {
+      margin-left: 0; /* Reset margin for the search box on smaller screens */
+    }
+  
+    .profil {
+      order: -1; /* Move the profile icon to the beginning on smaller screens */
+    }
+    
+    .slogan .content .gambarberanda {
+      width: 100%; /* Make the image fill the width on smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  }
+  
+  
+  .profil {
+    position: relative;
+  }
+  
+  .sub-navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #53A93E;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profil:hover .sub-navbar {
+    display: flex;
+  }
+  
+  .sub-navbar a {
+    padding: 10px;
+    color: #F5EEC8;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub-navbar a:hover {
+    background-color: #0F993E;
+  }
+  
+  /* Navbar */
+  .slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .faq {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .faq h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+
+  
+ /* panduan penyimpanan makanan */
+ .ppm .gambarpanduan{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+ }
+.ppm{
+    color: #333;
+}
+ .ppm .penyimpanan{
+    position: relative;
+    left:655px; 
+  }
+
+  .ppm ol{
+    position: relative;
+    left: 500px;
+  }
