@@ -15,6 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffff;
+  height: 100vh;
 }
 /* Navbar */
 .navbar {
@@ -94,14 +95,38 @@ body {
 .navbar .navbar-logo span {
   color:#F5EEC8;
 }
-/* Navbar */
 .slogan{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
+  margin-right: 500px;
 } 
-.slogan .content .gambarberanda {
-  width: 500px;
+
+.slogan .content{
+ position: relative;
+ padding-right: 0;
+ font-size: 60px;
+ bottom: 50px;
+ color: #53A93E;
+
+} 
+
+.slogan .content .s1{
+  position: relative;
+ right: 70px;
+   } 
+
+.slogan .content .s2{
+color: #D1B44D;
+ } 
+
+.gambarberanda {
+  position: relative;
+  width: 650px;
   height: auto;
-  margin-left: 260px;
+  margin-left: 800px;
+  bottom: 500px;
+  left: 50px; 
 }
+
